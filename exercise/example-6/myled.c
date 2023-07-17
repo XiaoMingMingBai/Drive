@@ -1,6 +1,8 @@
 /**
  * This file is a sample LED file, calling the device driver file
  * to write 1 to turn on the light, write 0 to turn off the light.
+ * To use it you need to manually create a device driver file:
+ *      mknod dev_path/name type major minor
 */
 #include "myled.h"
 #include <linux/fs.h>
