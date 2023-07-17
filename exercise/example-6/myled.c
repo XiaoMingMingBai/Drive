@@ -1,3 +1,7 @@
+/**
+ * This file is a sample LED file, calling the device driver file
+ * to write 1 to turn on the light, write 0 to turn off the light.
+*/
 #include "myled.h"
 #include <linux/fs.h>
 #include <linux/init.h>
@@ -76,6 +80,7 @@ int myled_open(struct inode *inode, struct file *file)
 int myled_release(struct inode *inode, struct file *file)
 {
     printk("%s:%s:%d\n", __FILE__, __func__, __LINE__);
+    // 3. Unmap
     iounmap(rcc);
     iounmap(moder);
     iounmap(odr);
