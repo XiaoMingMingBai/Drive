@@ -1,3 +1,8 @@
+/**
+ * This file opens a device driver file and loops to write 0/1 to it.
+ * If you want to use it you need to create a device driver file:
+ *      mknod dev_path/name type major minor
+*/
 #include <head.h>
 
 int main(int argc, char const *argv[])
