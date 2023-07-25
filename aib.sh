@@ -3,7 +3,7 @@ if [ $# -ne 2 ]; then
     exit 1
 fi
 
-modules_path=/lib/modules/5.19.0-46-generic/extra
+modules_path=/lib/modules/5.19.0-50-generic/extra
 drive_path=/dev/my*
 
 if [ $1 = "install" ]; then
