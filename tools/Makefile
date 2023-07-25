@@ -18,6 +18,8 @@ all:
 # 进入内核源代码目录下，读取内核的Makefile(顶层)
 # 执行make M=$(PWD) modules
 # make modules 表示编译模块，编译M变量指定路径下的模块
+install:
+	make -C $(KERNELDIR) M=$(PWD) INSTALL_MOD_PATH=/home/ming/rootfsmy modules_install
 clean:
 	make -C $(KERNELDIR) M=$(PWD) clean
 
