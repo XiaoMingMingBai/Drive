@@ -1,7 +1,7 @@
 /**
  * @brief platform
- * @details 
-*/
+ * @details
+ */
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/platform_device.h>
@@ -31,6 +31,7 @@ struct platform_device pdev = {
     .resource = res,
     .num_resources = ARRAY_SIZE(res),
 };
+#if 0
 static int __init platform_dev_init(void)
 {
     int ret;
@@ -50,4 +51,7 @@ static void __exit platform_dev_exit(void)
 }
 module_init(platform_dev_init);
 module_exit(platform_dev_exit);
+#else
+module_platform_driver(pdev);
+#endif
 MODULE_LICENSE("GPL");
