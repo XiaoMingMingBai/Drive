@@ -14,7 +14,7 @@ typedef struct
     volatile unsigned int AFRL;    // 0x20
     volatile unsigned int AFRH;    // 0x24
     volatile unsigned int BRR;     // 0x28
-    volatile unsigned int res;
+    volatile unsigned int res;     // 0x2C
     volatile unsigned int SECCFGR; // 0x30
 } gpio_t;
 // LED1  gpioe10
