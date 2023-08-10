@@ -1,7 +1,17 @@
-# FILE
-## /exercise
-Here are various examples.
-## /tools
-Here are various tools.
-## /log.ipynb
-This is a log of the work done.
+# 介绍
+这个有关驱动的练习总结和扩展仓库里面包含了很多驱动的必备知识。在 **log.ipynb** 文件中有有关内容的介绍接口和思路。可能会有不方便阅读，在 exercise 文件夹中的程序注释都为英文注释。另外里面有些部分在这里只是稍微提及，更多详细内容和扩展内容在我的博客 [`XiaoMingMingBai.com`](https://xiaomingmingbai.com)。
+## 仓库的结构： 
+* 1. linux 内核模块
+* 2. 字符设备驱动
+* 3. 内核中的并发和竞态
+* 4. IO 模型
+* 5. 设备树
+* 6. GPIO 子系统
+* 7. 中断子系统
+* 8. platform 总线驱动
+* 9. IIC 总线驱动   
+## 仓库的文件夹介绍：
+* exercise : 里面是各个单元的练习程序
+* tools : 里面是练习时为了方便测试编写的 Makefile 和 shell 文件
+* log : 是关于每块内容的总结，思路和有关内容。
+这里的内容是基于 mp157a 板子测试的。
